@@ -40,6 +40,11 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  transition: 0.3s;
+}
+
+.header.sticky {
+  background: rgba(0, 128, 128, 0.5);
 }
 
 .logo {
@@ -104,7 +109,7 @@ section {
   font-size: 3rem;
   font-weight: 700;
   color: transparent;
-  -webkit-text-stroke: 0.7px var(--bg-color);
+  -webkit-text-stroke: 0.7px var(--second-bg-color);
   transition: 0.5s;
 }
 
@@ -321,7 +326,7 @@ span {
   background: var(--second-bg-color);
 }
 #txt-color::before {
-  background-color: white;
+  background-color: black;
 }
 
 .education {
@@ -561,6 +566,9 @@ textarea {
 .contact form .btn-box .btns .btn {
   cursor: pointer;
 }
+/* #contact {
+  background: var(--second-bg-color);
+} */
 
 .focus {
   position: absolute;
@@ -589,14 +597,17 @@ textarea:valid ~ .focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   flex-wrap: wrap;
-  padding: 2rem 9%;
+  padding: 1rem;
   background: var(--main-color);
+  gap: 20px;
 }
 
 .footer-text p {
   font-size: 1.6rem;
   color: var(--second-bg-color);
+  padding-left: 10px;
 }
 .footer-iconTop a {
   position: relative;
@@ -642,65 +653,4 @@ a::before {
 
 .footer-iconTop a:hover i {
   color: var(--bg-color);
-}
-#cotact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  height: 70vh;
-  font-size: 15px;
-}
-
-.cotact-info-upper {
-  display: flex;
-  justify-content: center;
-  border-radius: 2rem;
-  border: 0.1rem solid var(--second-bg-color);
-  border-color: black;
-  background: var(--second-bg-color);
-  margin: 2rem auto;
-  padding: 0.5rem;
-}
-
-.cotact-info2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1.5rem;
-}
-
-.cotact-info2 p {
-  /* font-size: larger; */
-  color: var(--bg-color);
-}
-
-.icons {
-  cursor: pointer;
-}
-.my-box {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-.cotact-info2 a i {
-  cursor: default;
-  /* height: 2rem; */
-  font-size: 2rem;
-}
-
-.cotact-info2 i {
-  border: 1px var(--main-color) solid;
-  padding: 3px;
-  border-radius: 50%;
-  color: var(--second-bg-color);
-  background: var(--main-color);
-}
-
-.cotact-info2 a {
-  size: 1rem;
 }
