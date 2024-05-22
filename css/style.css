@@ -11,7 +11,7 @@
 }
 
 :root {
-  --bg-color: #88a4b2;
+  --bg-color: black;
   --second-bg-color: #dce8ea;
   --text-color: #3b515d;
   --main-color: #4d636e;
@@ -34,7 +34,8 @@ body {
   left: 0;
   width: 100%;
   padding: 2rem 9%;
-  background: transparent;
+  background: rgba(59, 81, 93, 0.7);
+  /* filter: blur(10px); */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,10 +76,11 @@ section {
   display: flex;
   align-items: center;
   padding: 0 9%;
-  background: url(/images/pic2.jpg) no-repeat;
+  background: url(/images/PP2.png) no-repeat;
   /* background: url("/images/pic.jpg") no-repeat; */
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-color: black;
+  background-position: right;
 }
 .home-content {
   max-width: 60rem;
@@ -88,6 +90,9 @@ section {
   font-size: 5.4rem;
   font-weight: 700;
   line-height: 1.3;
+}
+.home-content h1 span {
+  color: var(--text-color);
 }
 
 .home-content .text-animate {
@@ -100,6 +105,7 @@ section {
   font-weight: 700;
   color: transparent;
   -webkit-text-stroke: 0.7px var(--bg-color);
+  transition: 0.5s;
 }
 
 .home-content p {
@@ -155,7 +161,7 @@ section {
   left: 0;
   width: 0;
   height: 100%;
-  background: var(--second-bg-color);
+  background: black;
   z-index: -1;
   transition: 0.5s;
 }
@@ -208,16 +214,16 @@ section {
   width: 100%;
 }
 
-.home-imgHover {
+/* .home-imgHover {
   position: absolute;
   top: 0;
   right: 0;
   width: 45%;
   height: 100%;
   background: transparent;
-  /* border: 2px solid red; */
   transition: 3s;
-}
+} */
+
 .home-imgHover:hover {
   background: var(--main-color);
   opacity: 0.8;
@@ -619,7 +625,7 @@ a::before {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 0;
   height: 100%;
   background: var(--text-color);
   z-index: -1;
@@ -636,4 +642,65 @@ a::before {
 
 .footer-iconTop a:hover i {
   color: var(--bg-color);
+}
+#cotact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  height: 70vh;
+  font-size: 15px;
+}
+
+.cotact-info-upper {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: 0.1rem solid var(--second-bg-color);
+  border-color: black;
+  background: var(--second-bg-color);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.cotact-info2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1.5rem;
+}
+
+.cotact-info2 p {
+  /* font-size: larger; */
+  color: var(--bg-color);
+}
+
+.icons {
+  cursor: pointer;
+}
+.my-box {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.cotact-info2 a i {
+  cursor: default;
+  /* height: 2rem; */
+  font-size: 2rem;
+}
+
+.cotact-info2 i {
+  border: 1px var(--main-color) solid;
+  padding: 3px;
+  border-radius: 50%;
+  color: var(--second-bg-color);
+  background: var(--main-color);
+}
+
+.cotact-info2 a {
+  size: 1rem;
 }
