@@ -293,6 +293,22 @@ span {
   border-right: 0.2rem solid var(--text-color);
 }
 
+.two-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5rem;
+  font-size: 1.5rem;
+}
+
+.experience-box {
+  border: 2px solid var(--text-color);
+  padding: 3rem;
+
+  margin: 2rem;
+  border-radius: 2rem;
+}
 .about-content {
   text-align: center;
   display: flex;
@@ -653,4 +669,92 @@ a::before {
 
 .footer-iconTop a:hover i {
   color: var(--bg-color);
+}
+
+/* project design */
+.exp-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.article-cont {
+  border: 1px solid var(--second-bg-color);
+  border-radius: 2rem;
+  padding: 20px;
+  margin: 20px;
+}
+.article-cont img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+}
+.title {
+  color: var(--second-bg-color);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 5rem;
+}
+.section-p1 {
+  color: var(--second-bg-color);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.project-title {
+  margin: 1rem;
+  color: var(--second-bg-color);
+  font-size: 2.1rem;
+}
+
+/* brekpoints */
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 2rem 4%;
+  }
+
+  section {
+    padding: 10rem 4% 2rem;
+  }
+
+  .home {
+    padding: 0 4%;
+  }
+
+  .footer {
+    padding: 2rem 4%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    background: var(--second-bg-color);
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 4%;
+    background-color: #dce8ea;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
 }
