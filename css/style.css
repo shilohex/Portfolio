@@ -89,15 +89,20 @@ section {
 }
 .home-content {
   max-width: 60rem;
+  color: var(--second-bg-color);
 }
 
 .home-content h1 {
   font-size: 5.4rem;
   font-weight: 700;
   line-height: 1.3;
+  color: var(--main-color);
+
+  /* box-shadow: var(--second-bg-color); */
 }
+
 .home-content h1 span {
-  color: var(--text-color);
+  color: var(--second-bg-color);
 }
 
 .home-content .text-animate {
@@ -111,6 +116,10 @@ section {
   color: transparent;
   -webkit-text-stroke: 0.7px var(--second-bg-color);
   transition: 0.5s;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5),
+    0 0 40px rgba(255, 255, 255, 0.5), 0 0 50px rgba(255, 255, 255, 0.5),
+    0 0 60px rgba(255, 255, 255, 0.5), 0 0 70px rgba(255, 255, 255, 0.5);
 }
 
 .home-content p {
@@ -337,7 +346,21 @@ span {
   justify-content: center;
   display: flex;
 }
+.btn {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 5rem;
+}
 
+/* .btn-box .btn {
+  gap: 5rem;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+} */
 .btn-box .btns a::before {
   background: var(--second-bg-color);
 }
@@ -436,6 +459,11 @@ span {
   background: var(--second-bg-color);
 }
 
+.skills-column .title {
+  color: var(--main-color);
+  font-size: 2.5rem;
+}
+
 .skills-row {
   display: flex;
   flex-wrap: wrap;
@@ -452,7 +480,7 @@ span {
 
 .skills-box .skills-content {
   position: relative;
-  border: 0.2rem solid teal;
+  /* border: 0.2rem solid teal; */
   border-radius: 0.6rem;
   padding: 0.5rem 1.5rem;
   z-index: 1;
@@ -498,7 +526,7 @@ span {
   display: block;
   height: 100%;
   border-radius: 0.3rem;
-  background-color: var(--text-color);
+  background-color: var(--main-color);
 }
 .skills-column:nth-child(1) .progress:nth-child(1) .bar span {
   width: 90%;
@@ -512,15 +540,6 @@ span {
 .skills-column:nth-child(1) .progress:nth-child(4) .bar span {
   width: 90%;
 }
-.skills-column:nth-child(1) .progress:nth-child(5) .bar span {
-  width: 90%;
-}
-.skills-column:nth-child(1) .progress:nth-child(6) .bar span {
-  width: 70%;
-}
-.skills-column:nth-child(1) .progress:nth-child(7) .bar span {
-  width: 80%;
-}
 
 .skills-column:nth-child(2) .progress:nth-child(1) .bar span {
   width: 90%;
@@ -528,10 +547,16 @@ span {
 .skills-column:nth-child(2) .progress:nth-child(2) .bar span {
   width: 70%;
 }
+.skills-column:nth-child(2) .progress:nth-child(3) .bar span {
+  width: 80%;
+}
 
 .contact {
   min-height: auto;
   padding-bottom: 7rem;
+}
+.contact .heading {
+  color: var(--second-bg-color);
 }
 
 form {
@@ -561,12 +586,12 @@ textarea {
   color: var(--second-bg-color);
   background: transparent;
   border-radius: 0.6rem;
-  border: 0.2rem solid var(--main-color);
+  border: 0.2rem solid var(--second-bg-color);
 }
 
 input::placeholder,
 textarea::placeholder {
-  color: var(--text-color);
+  color: var(--second-bg-color);
 }
 
 .textarea-field {
@@ -616,7 +641,7 @@ textarea:valid ~ .focus {
   text-align: center;
   flex-wrap: wrap;
   padding: 1rem;
-  background: var(--main-color);
+  background: teal;
   gap: 20px;
 }
 
@@ -683,9 +708,11 @@ a::before {
 
 .article-cont {
   border: 1px solid var(--second-bg-color);
-  border-radius: 2rem;
+  border-radius: 3rem;
   padding: 20px;
   margin: 20px;
+  width: 100%;
+  height: 100%;
 }
 .article-cont img {
   width: 100%;
@@ -709,9 +736,9 @@ a::before {
   font-size: 1.5rem;
 }
 .project-title {
-  margin: 1rem;
+  margin: 2rem;
   color: var(--second-bg-color);
-  font-size: 2.1rem;
+  font-size: 1.5rem;
 }
 
 /* brekpoints */
